@@ -1,8 +1,8 @@
 import "../styles/Navbar.css";
 import "../styles/Notifications.scss";
 
-import niya from "../assets/niya.png";
-
+// import niya from "../assets/niya.png";
+import homeicon from "../assets/home-icon.png";
 import useArray from "../hooks/useArray";
 import SignInPrompt from "../components/SignInPrompt";
 import { pink } from "../scripts/Misc";
@@ -126,7 +126,7 @@ export default function Main() {
 					{/* <div className="grad-bar"></div> */}
 					<nav className={"navbar" + " noeff"} ref={navBar}>
 						<img
-							src={niya}
+							src={homeicon}
 							alt="Niya Logo"
 							title="Go back to main page"
 							onClick={() => navigate("/")}
@@ -136,7 +136,7 @@ export default function Main() {
 							<span className="bar"></span>
 							<span className="bar"></span>
 						</div> */}
-						<div className={"nav-items-container " + location.pathname}>
+						{/* <div className={"nav-items-container " + location.pathname}>
 							<ul
 								className={
 									"nav no-search" + (currentUser === "none" || !currentUser ? "" : " signed-in")
@@ -204,7 +204,7 @@ export default function Main() {
 									)}
 								</li>
 							</ul>
-						</div>
+						</div> */}
 					</nav>
 				</div>
 			</header>

@@ -1,4 +1,4 @@
-import "../styles/AppDiseaseId.scss";
+import "../styles/AppDiseaseId.css";
 import ImageRenderer from "../components/ImageRenderer";
 import avatarHmm from "../assets/hmmm.png";
 import useArray from "../hooks/useArray";

@@ -1,0 +1,217 @@
+.out {
+	margin-top: 6rem !important;
+}
+
+.appDiseaseId {
+	height: 100vh;
+	overflow-y: auto;
+
+	.topBanner {
+		margin-top: 7rem;
+	}
+
+	.sectionsWrapper {
+		width: 90%;
+		margin: 0 auto;
+		// display: flex;
+		// max-height: 99vh;
+		// overflow-y: auto;
+
+		.panel {
+			// height: 98vh !important;
+			overflow-y: auto;
+			display: none;
+
+			&.show {
+				display: block;
+			}
+		}
+
+		// .panel.loading {
+		// 	background-color: red;
+		// }
+
+		// .panel.doneLoading {
+		// 	background-color: blue;
+		// }
+
+		.panel {
+			min-height: 70vh;
+			
+			.inputAndSymptomsWrapper {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5rem;
+				overflow-x: hidden;
+
+				.inputWrapper {
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+					width: 80%;
+					margin: 0 auto;
+					padding: 0.5rem;
+
+					input {
+						width: 80%;
+						padding: 1rem 1.5rem;
+						border-radius: 8px;
+						background: rgba(#fff, 0.5);
+						border: 2px solid transparent;
+						padding: 0.9rem 1rem;
+						border-radius: 16px 0 0 16px;
+						outline: none;
+						transition: all 0.3s ease;
+
+						&:hover {
+							border-color: rgba(#fff, 0.7);
+						}
+					}
+
+					button {
+						height: 100% !important;
+						padding: 1rem;
+						border-radius: 0 16px 16px 0;
+						border-style: none;
+						background: rgba(#fff, 0.5);
+						cursor: pointer;
+						transition: all 0.3s ease;
+
+						&:hover {
+							background: #fff;
+						}
+					}
+				}
+
+				div.allSymptomsContainer {
+					display: grid;
+					grid-template-rows: auto;
+					grid-template-columns: repeat(5, minmax(0, 1fr));
+					gap: 0.7rem;
+					min-height: auto;
+					max-height: 40vh;
+					padding: 0.3rem 0.7rem;
+					overflow: auto;
+
+					span.symptom {
+						position: relative;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						padding: 0.6rem 1.2rem;
+						background: rgba(#fff, 0.3);
+						border-radius: 8px;
+						cursor: pointer;
+						transition: all 0.15s ease;
+
+						&.hide {
+							display: none;
+						}
+
+						&:hover,
+						&:focus {
+							background: rgba(#fff, 0.5);
+						}
+
+						&.selected .overlay {
+							opacity: 1;
+							transform: scale(1);
+						}
+
+						.overlay {
+							pointer-events: none;
+							position: absolute;
+							background-color: rgba(white, 0.6);
+							border-radius: 8px;
+							width: 100%;
+							height: 100%;
+							top: 0;
+							transform: scale(0.001);
+							opacity: 0;
+							transition: transform 0.4s ease 0s;
+						}
+
+						.overlay span {
+							pointer-events: none;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							font-weight: bold;
+							font-size: 2em;
+							color: #252525;
+							font-family: Sans-serif;
+						}
+					}
+				}
+			}
+
+			.predictButton {
+				background-color: rgba(white, 0.3);
+				padding: 1rem 2rem;
+				border-radius: 8px;
+				border-style: none;
+				cursor: pointer;
+				margin-top: 1rem;
+			}
+
+			&.panel3 {
+				.header {
+					font-size: 22px;
+
+					span {
+						font-size: 18px;
+					}
+
+					h2 {
+						font-weight: 600;
+					}
+				}
+
+				h4 {
+					font-weight: 400;
+					font-size: 18px;
+				}
+
+				ul.precautionsContainer {
+					width: min(600px, 90%);
+					list-style: none;
+					margin: 0 auto;
+					background-color: rgba(white, 0.1);
+					border: 2px solid rgba(white, 0.3);
+					border-radius: 8px;
+					padding: 2rem 0;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					font-size: 18px;
+					gap: 0.5rem;
+				}
+			}
+		}
+	}
+
+	.disclaimer {
+		background-color: rgba(red, 0.3);
+		margin: auto auto 1rem auto;
+		padding: 1rem;
+		bottom: 0;
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.allSymptomsContainer {
+		grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+	}
+
+
+	.panel3 {
+		.header {
+			h2 {
+				font-size: 32px;
+			}
+		}
+	}
+}

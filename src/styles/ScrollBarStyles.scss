@@ -4,6 +4,7 @@
 	width: 11px;
 	// border: 1px solid white;
 	background-color: transparent !important;
+	display: none !important;//remove for display scrollbar
 }
 
 ::-webkit-scrollbar-thumb {

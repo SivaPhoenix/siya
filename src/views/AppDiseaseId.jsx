@@ -338,8 +338,11 @@ export default function AppDiseaseId() {
 						Proceed
 					</button>
 				</section>
+				<p className="build">
+					YET TO BUILD
+				</p>
 
-				<section
+				{/* <section
 					className={"panel panel3 predictionPanel" + (currentPanel === 3 ? " show" : "")}
 					ref={predictionPanel}
 				>
@@ -358,15 +361,15 @@ export default function AppDiseaseId() {
 							<LoadingScreen in={true && showLoading} unmountOnExit transparent noprompt />
 						)}
 					</ul>
-				</section>
+				</section> */}
 			</div>
 
-			<footer className="disclaimer">
+			{/* <footer className="disclaimer">
 				This tool does not provide medical advice. It is intended for informational purposes only. It is not a
 				substitute for professional medical advice, diagnosis or treatment. Never ignore professional medical
 				advice in seeking treatment. If you think you may have a medical emergency, immediately call your
 				doctor.
-			</footer>
+			</footer> */}
 		</div>
 	);
 }

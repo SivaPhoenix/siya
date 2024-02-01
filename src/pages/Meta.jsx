@@ -14,7 +14,7 @@ export default function Meta() {
 				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 				<ul>
 					<li>
-						Contributors: <a href="https://www.github.com/sabzdotpy" target="_blank">sabzdotpy</a>
+						Contributors: <a href="https://www.github.com/SivaPhoenix" target="_blank">Siva</a>
 					</li>
 					<li>Version: 1.0.0</li>
 					<li>CID: 33cc334430a4a02213e305a94f71aa1727ef7034 </li>

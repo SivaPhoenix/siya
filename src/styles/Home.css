@@ -16,7 +16,7 @@ div.Home .mainWelcomeText span {
     gap: 1rem;
 }
 div.Home .mainContent {
-    width: 1000px;
+    width: min(1000px, 90%);
     margin: 0 auto;
     display: flex;
     border: 3px solid rgba(255, 255, 255, 0.2);

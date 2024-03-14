@@ -338,11 +338,9 @@ export default function AppDiseaseId() {
 						Proceed
 					</button>
 				</section>
-				<p className="build">
-					YET TO BUILD
-				</p>
+				
 
-				{/* <section
+				<section
 					className={"panel panel3 predictionPanel" + (currentPanel === 3 ? " show" : "")}
 					ref={predictionPanel}
 				>
@@ -361,7 +359,7 @@ export default function AppDiseaseId() {
 							<LoadingScreen in={true && showLoading} unmountOnExit transparent noprompt />
 						)}
 					</ul>
-				</section> */}
+				</section> 
 			</div>
 
 			{/* <footer className="disclaimer">

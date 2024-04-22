@@ -5,7 +5,7 @@ import { useAuth } from "../contexts/AuthContext";
 import "../styles/Home.css"
 // import avatarThat from "../assets/pointing_at_that.png";
 import avatarThat from "../assets/hi-versu1.png";
-import avatarHidden from "../assets/hidden.png";
+import avatarHidden from "../assets/v-hidden.png";
 import ImageRenderer from "../components/ImageRenderer";
 import { getTimeBasedGreeting } from "../scripts/Misc";
 import { MdWavingHand } from "react-icons/md";
@@ -55,9 +55,9 @@ export default function Home() {
 					<span className="avatarRenderDesktop">
 						<ImageRenderer url={avatarThat} height={"400px"} />
 					</span>
-					{/* <span className="avatarRenderMobile">
+					<span className="avatarRenderMobile">
 						<ImageRenderer url={avatarHidden} width={"250px"} />
-					</span> */}
+					</span>
 				</div>
 				<div className="suggestionsContainer">
 					<div className="suggestionsTitle">

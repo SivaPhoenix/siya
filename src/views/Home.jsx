@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 // import "../styles/Home.scss";
 import "../styles/Home.css"
-import avatarThat from "../assets/pointing_at_that.png";
+// import avatarThat from "../assets/pointing_at_that.png";
+import avatarThat from "../assets/hi-versu1.png";
 import avatarHidden from "../assets/hidden.png";
 import ImageRenderer from "../components/ImageRenderer";
 import { getTimeBasedGreeting } from "../scripts/Misc";
@@ -49,15 +50,15 @@ export default function Home() {
 				)}
 			</div>
 			<div className="mainContent">
-				{/* <div className="avatarContainer">
+				<div className="avatarContainer">
 					<div className="avatarOffset"></div>
 					<span className="avatarRenderDesktop">
 						<ImageRenderer url={avatarThat} height={"400px"} />
 					</span>
-					<span className="avatarRenderMobile">
+					{/* <span className="avatarRenderMobile">
 						<ImageRenderer url={avatarHidden} width={"250px"} />
-					</span>
-				</div> */}
+					</span> */}
+				</div>
 				<div className="suggestionsContainer">
 					<div className="suggestionsTitle">
 						{suggestionsText.value[Math.floor(Math.random() * (suggestionsText.value.length))]}

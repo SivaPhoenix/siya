@@ -71,29 +71,11 @@ export const getDisplayNameFromUserName = (username) => {
 export const internetPresent = () => {
 	console.log("ping google");
 	return fetch("https://www.google.com/", { mode: "no-cors" });
-	// fetch resolves if req goes through, meaning there is internet. google because of good uptime and fast res
+	
 };
 
-// export const getMessageFromErrorCode = (errorcode) => {
-//     switch (errorcode) {
-//         case "ERROR_TOO_MANY_REQUESTS":
-//         case "operation-not-allowed":
-//             return "Too many requests to log into this account."
-//             break
-//         case "ERROR_OPERATION_NOT_ALLOWED":
-//         case "operation-not-allowed":
-//             return "Server error, please try again later."
-//             break
-//         case "ERROR_TOO_MANY_REQUESTS":
-//             return "Too many requests. Try again later."
-//             break
-//         case "ERROR_OPERATION_NOT_ALLOWED":
-//             return "Signing in with Email and Password is not enabled."
-//             break
-//         default:
-//             return "An undefined Error happened."
-//     }
-// }
+
+
 
 export const treatAsUTC = (date) => {
     var result = new Date(date);

@@ -21,14 +21,14 @@ export default function Quotes() {
 						newQuoteBtn.current.classList.remove("play");
 					})
 					.catch((err) => {
-						setQuote({ content: "Something went wrong :(", author: "Niya" });
+						setQuote({ content: "Something went wrong :(", author: "Siva" });
 						newQuoteBtn.current.removeAttribute("disabled");
 						newQuoteBtn.current.classList.remove("play");
 					});
 			})
 			.catch((err) => {
 				console.log("No response");
-				setQuote({ content: "Something went wrong :(", author: "Niya" });
+				setQuote({ content: "Something went wrong :(", author: "Siva" });
 				newQuoteBtn.current.removeAttribute("disabled");
 				newQuoteBtn.current.classList.remove("play");
 			});

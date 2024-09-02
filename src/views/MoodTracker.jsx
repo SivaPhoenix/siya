@@ -85,7 +85,7 @@ export default function MoodTracker() {
 			{showMoodInfo ? (
 				<div className="moodInfo brownText">
 					<div className="text">
-						This is Niya's mood tracker. You can see the number of times you have logged your mood when
+						This is Siya's mood tracker. You can see the number of times you have logged your mood when
 						writing journals.
 					</div>
 					<div className="close" onClick={() => setShowMoodInfo(false)}>

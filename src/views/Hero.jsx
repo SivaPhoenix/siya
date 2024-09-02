@@ -47,21 +47,21 @@ export default function Hero(props) {
 								className="niyaLabel dottedUnderline popup noMobileTapHighlight"
 								aria-label="An Irish variant of the name Nia, meaning 'aim', 'purpose', and 'beauty'."
 							>
-								Niya.
+								Siya.
 							</span>
 						</h1>
 						<span className="subText">Your personal healthcare assistant (and friend!)</span>
 					</div>
 
 					<div className="avatarWrapper">
-						{/* <img src={avatarHi} alt="image of niya saying hi" /> */}
+						
 						<ImageRenderer url={avatarHi} width={330} height={500} />
 					</div>
 				</section>
 				<section className="about">
 					<a name="about"></a>
 					<SectionDivider />
-					<h1>About Niya</h1>
+					<h1>About Siya</h1>
 
 					<div className="aboutText">
 						<div className="aboutTextWrapper">
@@ -79,7 +79,7 @@ export default function Hero(props) {
 								I'm created by{" "}
 								<b
 									className="popup dottedUnderline noMobileTapHighlight"
-									aria-label="Sabari, Naveen, Sanjay"
+									aria-label=""
 								>
 									Team Zeta
 								</b>{" "}

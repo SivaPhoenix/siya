@@ -1,7 +1,7 @@
 import "../styles/Navbar.css";
 import "../styles/Notifications.scss";
 
-// import niya from "../assets/niya.png";
+
 import homeicon from "../assets/home-icon.png";
 import useArray from "../hooks/useArray";
 import SignInPrompt from "../components/SignInPrompt";
@@ -127,7 +127,7 @@ export default function Main() {
 					<nav className={"navbar" + " noeff"} ref={navBar}>
 						<img
 							src={homeicon}
-							alt="Niya Logo"
+							alt="Siya Logo"
 							title="Go back to main page"
 							onClick={() => navigate("/")}
 						></img>

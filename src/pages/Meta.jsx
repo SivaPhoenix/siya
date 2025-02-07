@@ -21,8 +21,8 @@ export default function Meta() {
 					<li>Status: dev</li>
 					<li>
 						Public hosting preview url:{" "}
-						<a href="https://niya-wheat.vercel.app" target="_blank">
-							https://niya-wheat.vercel.app
+						<a href="https://siya-two.vercel.app/" target="_blank">
+						https://siya-two.vercel.app/
 						</a>
 					</li>
 					<li>Public stable release expected date: NaN</li>

@@ -2,6 +2,7 @@
 Retrain the DecisionTree model and save it with the current scikit-learn version.
 Run this whenever scikit-learn is upgraded.
 """
+# Made for Replacing the model file with the one trained with the current scikit-learn version, to avoid version mismatch issues when loading the model.
 import sys
 import os
 

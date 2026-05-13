@@ -64,6 +64,8 @@ def get_all_syms():
     return list(get_all_symptoms())
 
 if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 5000))
     print("Flask app running")
-    app.run()
+    app.run(host="0.0.0.0", port=port)
 
